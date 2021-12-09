@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+
+    <a class="img" href="index.html">
+        <h2>Garrett's Blog</h2>
+    </a>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</nav>
+
+<div class="wrapper">
+
+    <div class="splash">
+        <h1>COURSES</h1>
+    </div>
+
+
+    <div class="container">
+        <img class="images" src="https://i1.wp.com/www.itsfoss.net/wp-content/uploads/2021/09/Kali-Linux-2020.4.png?fit=1127%2C752&ssl=1" alt="Kali">
+        <button onclick="togglePopup()" class="open">Kali Linux Info</button>
+
+        <div class="full-screen hidden flex-container-center">
+            <div class="popupdiv">
+
+                <div class="popcontainer">
+                    <img class="popimages" src="https://i1.wp.com/www.itsfoss.net/wp-content/uploads/2021/09/Kali-Linux-2020.4.png?fit=1127%2C752&ssl=1" alt="Kali">
+                    <p class="poptext">Kali Linux is an open source Linux distribution for advanced Penetration Testing or Security Auditing.</p>
+                </div>
+
+                <div class="popcontainer">
+                    <img class="popimages" src="https://pbs.twimg.com/profile_images/580131056629735424/2ENTk2K2_400x400.png" alt="Metasploit">
+                    <p class="poptext">Metasploit is a powerful tool used by both ethical hackers and cyber-criminals.  It helps find vulnerabilities on networks and servers.</p>
+                </div>
+
+                <div class="popcontainer">
+                    <img class="popimages" src="data:image/png;base64,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" alt="BurpSuite">
+                    <p class="poptext">Burp Suite is a powerful penetration testing vulnerability finding tool.  It is often used for checking web application security.</p>
+                </div>
+
+                <div class="popcontainer">
+                    <img class="popimages" src="https://www.freecodecamp.org/news/content/images/2020/08/wireshark-1.png" alt="WireShark">
+                    <p class="poptext">Wireshark is the go-to network protocol analysis tool.  Anyone from government agencies to schools use wireshark for troubleshooting and teaching purposes.</p>
+                </div>
+
+
+            </div>
+            <button onclick="togglePopup()" class="closeButton">Close Popup</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img class="images" src="https://pbs.twimg.com/profile_images/580131056629735424/2ENTk2K2_400x400.png" alt="Metasploit">
+        <button onclick="togglePopup()" class="open">Metasploit Info</button>
+
+        <div class="full-screen hidden flex-container-center">
+            <button onclick="togglePopup()" class="closeButton">Close Popup</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img class="images" src="data:image/png;base64,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" alt="BurpSuite">
+        <button onclick="togglePopup()" class="open">Burp Suite Info</button>
+
+        <div class="full-screen hidden flex-container-center">
+            <button onclick="togglePopup()" class="closeButton">Close Popup</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="images" src="https://www.freecodecamp.org/news/content/images/2020/08/wireshark-1.png" alt="WireShark">
+        <button onclick="togglePopup()" class="open">WireShark Info</button>
+
+            <div class="full-screen hidden flex-container-center">
+                <button onclick="togglePopup()" class="closeButton">Close Popup</button>
+            </div>
+    </div>
+
+
+    <footer>
+        <h2>COPYRIGHT</h2>
+        <h2>2021</h2>
+    </footer>
+    <script src="app.js"></script>
+</div>
+
+</body>
+</html>
